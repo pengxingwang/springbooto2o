@@ -1,5 +1,6 @@
 package com.example.o2o.web.superadmin;
 
+import cn.hutool.extra.mail.MailUtil;
 import com.example.o2o.domain.TbArea;
 import com.example.o2o.enums.ResultEnum;
 import com.example.o2o.service.impl.TbAreaServiceImpl;
@@ -37,5 +38,10 @@ public class AreaController {
       }
    }
 
+
+   // TODO 删除邮件发送
+   public static void main(String[] args) {
+      MailUtil.send("www.iphone@foxmail.com","测试", "邮件来自Hutool测试", false);
+   }
 
 }
